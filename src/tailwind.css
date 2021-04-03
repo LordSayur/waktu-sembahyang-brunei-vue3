@@ -1,3 +1,14 @@
+:root {
+  --first-color: #303841;
+  --second-color: #3a4750;
+  --third-color: #f6c90e;
+  --fourth-color: #eeeeee;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #bdbdbd;
+  --icon-color: #000000;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
