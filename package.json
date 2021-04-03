@@ -7,8 +7,9 @@
     "build": "vue-cli-service build",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
+    "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
@@ -20,11 +21,13 @@
     "register-service-worker": "^1.7.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
+    "vue-i18n": "^9.0.0",
     "vue-router": "^4.0.0-0",
     "xstate": "^4.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.13",
+    "@intlify/vue-i18n-loader": "^2.0.0",
     "@storybook/addon-actions": "^6.2.0-rc.10",
     "@storybook/addon-essentials": "^6.2.0-rc.10",
     "@storybook/addon-links": "^6.2.0-rc.10",
@@ -45,6 +48,7 @@
     "prettier": "^2.2.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "vue-cli-plugin-i18n": "~2.0.3",
     "vue-loader": "^16.2.0"
   }
 }
